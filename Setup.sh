@@ -55,7 +55,7 @@ fi
 
 echo "正在安装 git"
 sudo apt update
-sudo apt install git
+sudo apt -y install git
 read -p "输入你滴名字：" name
 git config --global user.name {$name}
 read -p "输入你滴邮箱：" edress
@@ -66,7 +66,7 @@ git config --list
 # 安装 zsh && oh-my-zsh
 
 echo "安装zsh咯~"
-sudo apt-get install zsh
+sudo apt-get -y install zsh
 echo "安装 oh-my-zsh"
 echo "安装好后会进入 oh-my-zsh 记得输入exit退出！"
 sudo sh -c "$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)"
